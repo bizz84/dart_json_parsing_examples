@@ -9,9 +9,8 @@ class Restaurant {
         case {
           'name': String name,
           'cuisine': String cuisine,
-          'year_opened': int? yearOpened,
         }) {
-      //final yearOpened = data['year_opened'] as int?;
+      final yearOpened = data['year_opened'] as int?;
       return Restaurant(name: name, cuisine: cuisine, yearOpened: yearOpened);
     } else {
       if (data['name'] is! String) {
